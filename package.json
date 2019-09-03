@@ -4,9 +4,9 @@
   "description": "smooth scroll",
   "main": "script.js",
   "scripts": {
-    "build:js": "browserify script.js > dist/script.js",
-    "build:css": "stylus site.css > distsite.css",
-    "build:html": "jade index.html > dist/index.html",
+    "build:js": "browserify assets/scripts/script.js > dist/script.js",
+    "build:css": "stylus assets/styles/site.styl > dist/site.css",
+    "build:html": "jade assets/html/index.jade > dist/index.html",
     "build": "npm run build:js && npm run build:css && npm run build:html",
     "build:watch": "watch 'npm run build' .",
     "test": "echo \"Error: no test specified\" && exit 1"
