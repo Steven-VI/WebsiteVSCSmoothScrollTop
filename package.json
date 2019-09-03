@@ -1,0 +1,33 @@
+{
+  "name": "websitevscsmoothscrolltop",
+  "version": "1.0.0",
+  "description": "smooth scroll",
+  "main": "script.js",
+  "scripts": {
+    "build:js": "browserify script.js > dist/script.js",
+    "build:css": "stylus site.css > distsite.css",
+    "build:html": "jade index.html > dist/index.html",
+    "build": "npm run build:js && npm run build:css && npm run build:html",
+    "build:watch": "watch 'npm run build' .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Steven-VI/WebsiteVSCSmoothScrollTop.git"
+  },
+  "keywords": [
+    "smooth",
+    "scroll"
+  ],
+  "author": "Steven VI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Steven-VI/WebsiteVSCSmoothScrollTop/issues"
+  },
+  "homepage": "https://github.com/Steven-VI/WebsiteVSCSmoothScrollTop#readme",
+  "dependencies": {
+    "browserify": "^16.5.0",
+    "jade": "^1.11.0",
+    "stylus": "^0.54.7"
+  }
+}
